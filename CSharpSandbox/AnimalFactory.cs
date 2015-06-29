@@ -8,11 +8,11 @@ namespace CSharpSandbox
 {
     class AnimalFactory
     {
-         /// <summary>
-         /// MainApp startup class for Real-World
-         /// Abstract Factory Design Pattern.
-         /// </summary>
-        class MainApp
+        /// <summary>
+        /// MainApp startup class for Real-World
+        /// Abstract Factory Design Pattern.
+        /// </summary>
+/*        class MainApp
         {
             /// <summary>
             /// Entry point into console application.
@@ -31,8 +31,10 @@ namespace CSharpSandbox
 
                 // Wait for user input
                 Console.ReadKey();
+
+
             }
-        }
+        } */
 
       /// <summary>
       /// The 'AbstractFactory' abstract class
