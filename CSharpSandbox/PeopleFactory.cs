@@ -60,16 +60,17 @@ namespace CSharpSandbox
         abstract class Person
         {
             public abstract void Love(Person p);
+            public abstract void Soul();
         }
 
         abstract class Male : Person
         {
-            
+            public Boolean HasPenis = true;
         }
 
         abstract class Female : Person
         {
-            
+            public Boolean HasVagina = true;
         }
 
         class GayMan : Male
@@ -88,13 +89,26 @@ namespace CSharpSandbox
                 }
                 Console.WriteLine(this.GetType().Name + s + p.GetType().Name);
             }
+            public override void Soul()
+            {
+                throw new NotImplementedException();
+            }
         }
         class StraightMan : Male
         {
-
+            private String s;
             public override void Love(Person p)
             {
-                Console.WriteLine(this.GetType().Name + " loves " + p.GetType().Name);
+                s = this.GetType().Name + " loves " + p.GetType().Name;
+                if (this.HasPenis == true)
+                {
+                    s += " with his penis.";
+                }
+                Console.WriteLine(s);
+            }
+            public override void Soul()
+            {
+                throw new NotImplementedException();
             }
         }
 
@@ -114,6 +128,10 @@ namespace CSharpSandbox
                 }
                 Console.WriteLine(this.GetType().Name + s + p.GetType().Name);
             }
+            public override void Soul()
+            {
+                throw new NotImplementedException();
+            }
         }
         class StraightWoman : Female
         {
@@ -121,6 +139,10 @@ namespace CSharpSandbox
             public override void Love(Person p)
             {
                 Console.WriteLine(this.GetType().Name + " loves " + p.GetType().Name);
+            }
+            public override void Soul()
+            {
+                throw new NotImplementedException();
             }
         }
 
