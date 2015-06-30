@@ -102,7 +102,7 @@ namespace CSharpSandbox
                 s = this.GetType().Name + " loves " + p.GetType().Name;
                 if (this.HasPenis == true)
                 {
-                    s += " with his penis.";
+                    s += " with all his heart.";
                 }
                 Console.WriteLine(s);
             }
